@@ -1,0 +1,116 @@
+/* 
+    ==================================================
+    EXPLICACIÓN: DIFERENCIA ENTRE PADDING Y MARGIN
+    ==================================================
+    - Padding (Relleno interno): Es el espacio que se encuentra 
+      DENTRO de la caja, entre el contenido (texto/imagen) y su borde. 
+      Sirve para que los elementos no queden pegados a las 
+      orillas de la tarjeta.
+    
+    - Margin (Margen externo): Es el espacio que se encuentra 
+      AFUERA de la caja, entre el borde del elemento y las 
+      demás cajas o elementos vecinos. Sirve para separar las 
+      tarjetas y los bloques entre sí en la página.
+*/
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.avatar {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+}
+
+.portfolio-header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.bio {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.challenges-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #334155;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+/* Cada reto en su propia tarjeta con padding, margin y bordes redondeados */
+.challenge-card {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    margin: 0;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.challenge-card h3 {
+    margin: 0 0 4px 0;
+    color: #2563eb;
+    font-size: 1.1rem;
+}
+
+.challenge-card p {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: #1d4ed8;
+}
