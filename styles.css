@@ -1,41 +1,46 @@
 /* 
-    ==================================================
-    EXPLICACIÓN: DIFERENCIA ENTRE PADDING Y MARGIN
-    ==================================================
-    - Padding (Relleno interno): Es el espacio que se encuentra 
-      DENTRO de la caja, entre el contenido (texto/imagen) y su borde. 
-      Sirve para que los elementos no queden pegados a las 
-      orillas de la tarjeta.
+    ==================================================================
+    EXPLICACIÓN EN MIS PALABRAS: DIFERENCIA ENTRE PADDING Y MARGIN
+    ==================================================================
+    - PADDING (Relleno interno): Es el espacio que se encuentra DENTRO 
+      de la caja o tarjeta, ubicado entre el texto o contenido y el borde 
+      de la misma. Sirve para que los elementos no queden pegados a las 
+      orillas del borde.
     
-    - Margin (Margen externo): Es el espacio que se encuentra 
-      AFUERA de la caja, entre el borde del elemento y las 
-      demás cajas o elementos vecinos. Sirve para separar las 
-      tarjetas y los bloques entre sí en la página.
+    - MARGIN (Margen externo): Es el espacio que se encuentra AFUERA 
+      de la caja, ubicado entre el borde del elemento y los demás 
+      elementos o tarjetas vecinas de la página. Sirve para separar 
+      los bloques y mantener una distancia estética.
 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #f8fafc;
     color: #1e293b;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    margin: 0;
-    padding: 40px 20px;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 40px 20px;
 }
 
 .main-container {
     max-width: 800px;
     width: 100%;
-    margin: auto;
 }
 
+/* Tarjeta principal de presentación */
 .portfolio-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     background-color: #ffffff;
-    padding: 32px;
+    padding: 35px 24px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
@@ -48,6 +53,7 @@ body {
 
 .portfolio-header h1 {
     font-size: 1.6rem;
+    font-weight: 700;
     margin-bottom: 8px;
     color: #0f172a;
 }
@@ -55,6 +61,7 @@ body {
 .bio {
     color: #64748b;
     font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 .challenges-section h2 {
@@ -64,18 +71,19 @@ body {
     color: #334155;
 }
 
+/* Contenedor de la cuadrícula de retos */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
 }
 
 /* Cada reto en su propia tarjeta con padding, margin y bordes redondeados */
 .challenge-card {
     background-color: #ffffff;
-    padding: 24px 20px;
-    margin: 0;
-    border-radius: 16px;
+    padding: 24px 16px;       /* Relleno interno de la tarjeta */
+    margin: 0;                /* Margen externo base */
+    border-radius: 16px;      /* Bordes redondeados */
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
     text-align: center;
@@ -88,7 +96,7 @@ body {
 }
 
 .challenge-card h3 {
-    margin: 0 0 4px 0;
+    margin-bottom: 4px;
     color: #2563eb;
     font-size: 1.1rem;
 }
