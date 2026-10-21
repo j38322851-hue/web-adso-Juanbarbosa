@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop - Contacto</title>
+    <link rel="shortcut icon" href="img/barberia.webp" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="peluqueria.html">Peluquería</a>
+            <a href="contactos.html">Contactos</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Información y Tabla -->
+        <section>
+            <h2>Contáctanos</h2>
+            <table>
+                <caption>Info</caption>
+                <thead>
+                     <tr>
+                        <th>Información de contacto</th>
+                        <th>Direcciones</th>
+                        <th>Horario de atención</th>
+                     </tr>
+                </thead>
+                <tbody>
+                     <tr>
+                        <td>Juan Pablo #3052042304</td>
+                        <td>Carrera 16b #32-50 Arboleda del Seminario</td>
+                        <td>De lunes a sábado de 7:00 AM a 7:00 PM</td>
+                     </tr>
+                     <tr>
+                        <td><img src="img/barberia.webp" alt="Barber Shop"></td>
+                        <td colspan="2"><a href="https://wa.me/573052042304" target="_blank">WhatsApp</a></td>
+                     </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Punto 1 y 2: Formulario de Contacto con validación nativa -->
+        <section class="contacto-form-section">
+            <h3>Envíanos un mensaje</h3>
+            
+            <form action="#" method="POST" class="form-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular (Opcional):</label>
+                    <input type="tel" id="celular" name="celular" placeholder="3001234567">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción...</option>
+                        <option value="Pedido">Pedido</option>
+                        <option value="Pregunta">Pregunta</option>
+                        <option value="Queja">Queja</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- Punto 4: -->
+        <!-- 
+            EXPLICACIÓN DEL ATRIBUTO 'NAME':
+            El atributo 'name' sirve para identificar el nombre del campo cuando el formulario
+            es enviado al servidor o procesado por JavaScript. Funciona como una clave o etiqueta
+            para recoger el valor que escribió el usuario (por ejemplo: nombre="Juan", motivo="Pedido").
+        -->
+    </main>
+</body>
+</html>

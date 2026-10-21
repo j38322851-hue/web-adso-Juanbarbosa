@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f4f7;
+    color: #1f2933;
+}
+
+.formulario{
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+fieldset{
+    margin: 0 0 1.25rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+}
+
+legend{
+    padding: 0 0.5rem;
+    font-weight: 600;
+    color: #2e7d00;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 2px solid #cbd2d9;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline: 3px solid #ffb300;
+    outline: 2px;
+    border-color: #2e7d00;
+}
+
+.opcion{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.opcion input{
+    width: auto;
+    margin-right: 0.35rem;
+}
+
+/*Manejo de errores*/
+
+input:user-invalid, 
+select:user-invalid,
+textarea:user-invalid{
+    border-color: #c62828;
+    background-color: #fff5f5;
+}
+
+.error{
+    display: block;
+    min-height: 1.2rem;
+    color: #c62828;
+    font-size: 0.85rem;
+}
+
+/* --- Estilo y centrado para el título principal --- */
+h1, .titulo-registro { /* Ajusta el selector según cómo tengas etiquetado tu título en HTML (por ejemplo, h1 o una clase) */
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+/* --- Contenedor para centrar el botón (opcional si el botón ya es block) --- */
+.contenedor-boton {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #385e44;
+}

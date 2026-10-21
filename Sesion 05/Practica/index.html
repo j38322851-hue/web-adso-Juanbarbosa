@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Registro de la Biblioteca</h1>
+        <form action="#" class="formulario">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="documento">Documento</label>
+                    <input type="text" id="documento" name="documento" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave" required minlength="8">
+                    </div>
+                    <div class="campo">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="0" max="120">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Tu Perfil</legend>
+                <div class="campo">
+                    <label for="tipo">Tipo de Usuario</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Elige una opcion</option>
+                        <option value="aprendiz">Aprendiz</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
+                </div>
+
+                <fieldset class="grupo">
+                    <legend>Sede</legend>
+                    <label for="norte" class="opcion">
+                        <input type="radio" name="sede" id="norte" value="norte" checked>Norte
+                    </label>
+
+                    <label for="centro" class="opcion">
+                        <input type="radio" name="sede" id="centro" value="centro">Centro
+                    </label>
+
+                    <label for="sur" class="opcion">
+                        <input type="radio" name="sede" id="sur" value="sur">Sur
+                    </label>
+
+                </fieldset>
+                <fieldset class="grupo">
+                    <legend>Temas que te interesan</legend>
+                     <label for="novelas" class="opcion">
+                     <input type="checkbox" name="temas" id="novelas" value="novelas">Novelas
+                     </label>
+                     <label for="ciencia" class="opcion">
+                     <input type="checkbox" name="temas" id="ciencia" value="ciencia">Ciencia
+                     </label>
+                     <label for="tecnologia" class="opcion">
+                     <input type="checkbox" name="temas" id="tecnologia" value="tecnologia">Tecnologia
+                     </label>
+                </fieldset>
+                <div class="campo">
+                    <label for="comentario">¿Que libro te gustaria que tuvieramos?</label>
+                    <textarea name="comentario" id="comentario" rows="4"></textarea>
+                </div>
+                </fieldset>
+            <button type="submit" class="boton">Regristrarme</button>
+        </form>
+    </main>
+</body>
+</html>
