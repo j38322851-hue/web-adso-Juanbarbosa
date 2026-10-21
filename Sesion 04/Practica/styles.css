@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: "Poppins",Arial, sans-serif;
+    background-color: beige;
+}
+
+.tarjeta{
+    max-width: 360px ;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #e4e7eb;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 16px rgb(0, 102, 255);
+    text-align: center;
+}
+
+.avatar{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: rgb(225, 241, 255);
+    font-size: 3rem;
+    line-height: 96px;
+}
+
+#nombre{
+    margin: 0;
+    font-weight: 1.6rem;
+}
+
+.rol{
+    margin: 0.25rem 0;
+    color: rgb(0, 100, 125);
+    font-weight: 600;
+}
+
+.ciudad{
+    margin: 0 0 1.5rem;
+    color: rgb(90, 93, 255);
+}
+
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.habilidades{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.habilidades li{
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.35rem 0.08rem;
+    border-color: 999px;
+    background-color: aliceblue;
+    color: rgb(0, 27, 60);
+    font-size: 0.9rem;
+}
+
+.boton {
+    padding: 0.07rem 1.7rem;
+    border: 2px solid rgb(171, 179, 201);
+    border-radius: 6px;
+    background-color: rgb(230, 255, 255);
+    color: #f2bdbd;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(152, 224, 255);
+}
+
+.boton:focus-visible{
+    outline: 3px solid #4551ff;
+    outline-offset: 3px;
+}
+
+body.oscuro{
+    background-color: #020422;
+    color: cadetblue;
+}
+
+body.oscuro .tarjeta{
+    background-color: #000d45;
+    border-color: #4551ff;
+    box-shadow: none;
+}
+
+body.oscuro .rol{
+    color: aliceblue;
+}
+
+body.oscuro .ciudad{
+    color: aliceblue;
+}
+
+body.oscuro .habilidades li{
+    background-color: rgb(206, 232, 255);
+    color: rgb(59, 88, 113);
+}
+
+.oculto{
+    display: none;
+}

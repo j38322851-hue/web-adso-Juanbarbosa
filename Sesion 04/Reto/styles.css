@@ -1,0 +1,123 @@
+/* Estilos Generales y Modo Claro */
+body {
+    background-color: #f0f2f5;
+    color: #1e293b;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tarjeta centrada con max-width, margin auto, padding, bordes redondeados y sombra */
+.profile-card {
+    background-color: #ffffff;
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    padding: 32px 24px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Avatar circular para el emoji */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 16px auto;
+    border: 3px solid #3b82f6;
+    background-color: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    box-sizing: border-box;
+}
+
+/* Textos */
+#profile-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 10px 0 6px 0;
+}
+
+#profile-bio {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Habilidades en fila (display: inline-block) */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    background-color: #eff6ff;
+    color: #2563eb;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Botón interactivo */
+.action-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #1d4ed8;
+}
+
+.action-button:focus-visible {
+    outline: none;
+    border: 2px solid #1e3a8a;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.4);
+}
+
+/* Modo oscuro: body.oscuro */
+body.oscuro {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.oscuro .profile-card {
+    background-color: #1e293b;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+body.oscuro .avatar {
+    background-color: #0f172a;
+    border-color: #60a5fa;
+}
+
+body.oscuro #profile-bio {
+    color: #94a3b8;
+}
+
+body.oscuro .skills-list li {
+    background-color: #334155;
+    color: #93c5fd;
+}
