@@ -1,0 +1,94 @@
+/*  RESPUESTAS A LAS PREGUNTAS (Punto 5):
+
+   1. ¿Por qué es mejor un solo styles.css que poner los estilos en cada página?
+      - Permite mantener la consistencia visual en todo el sitio web de forma sencilla.
+      - Simplifica el mantenimiento: si se requiere cambiar un color o fuente, solo se
+        modifica una vez en este archivo y se actualiza automáticamente en todas las páginas.
+      - Mejora el rendimiento de carga, ya que el navegador almacena en caché el archivo
+        styles.css tras la primera consulta.
+
+   2. Si un h2 tiene una regla de etiqueta y otra de clase con colores distintos, ¿cuál gana y por qué?
+      - Gana la regla de CLASE.
+      - Esto se debe a la regla de especificidad de CSS, en la cual un selector de clase 
+        (ej. .titulo) tiene mayor prioridad/peso que un selector de etiqueta o tipo (ej. h2). */
+
+
+:root {
+  --color-principal: #1a1a1a;    /* Negro/Gris oscuro elegante */
+  --color-acento: #c59b27;       /* Dorado tipo barbería / letrero */
+  --color-fondo: #f8f9fa;        /* Fondo claro y limpio */
+  --color-texto: #333333;        /* Texto principal */
+  --color-blanco: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-principal);
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+nav a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--color-acento);
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--color-blanco);
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--color-principal);
+  border-bottom: 2px solid var(--color-acento);
+  padding-bottom: 5px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd; 
+}
+
+th, td {
+  padding: 12px; 
+  text-align: left;
+}
+
+
+th {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+}
+
+footer {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}

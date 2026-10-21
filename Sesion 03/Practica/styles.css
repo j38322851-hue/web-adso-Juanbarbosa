@@ -1,0 +1,65 @@
+hr{
+    background-color: green;
+    height: 5px;
+    width: 50%;
+    border-style: dotted;
+}
+
+h1 {
+  color: green;
+  font-size: 100px;
+}
+
+body{
+    background-color: rgb(247, 255, 241);
+    
+    font-family: 'Minecraft', sans-serif;
+                                                
+}
+
+
+
+.destacado{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 30px;
+    background-color: rgb(195, 251, 179);
+}
+
+#jzz{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: rgb(195, 251, 179);
+}
+
+.destacados {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#portada {
+  border: 4px solid #15ff00;
+  border-radius: 12px;
+}
+
+nav a{
+    text-decoration: none;
+    color: green;
+}
+
+h2, h3, h4{
+    color: green;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+h2 { color: blue; }
+.titulo-seccion { color: green; }
+h2 { color: red; }

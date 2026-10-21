@@ -1,0 +1,66 @@
+/*  Selector de etiqueta */
+body {
+     font-family: "Libre Caslon Condensed", serif;
+     font-optical-sizing: auto;
+     font-weight: 450;
+     font-style: normal;
+     text-align: center; /* Centra todo el texto de la página automáticamente */
+}
+
+/* Selector agrupado */
+h1, h2 {
+    color: #2b580c;
+    margin-bottom: 10px;
+}
+
+/* Selector ID */
+#titulo-principal {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Selector descendiente */
+header h1 {
+    letter-spacing: 1px;
+}
+
+/* Clases */
+.card {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 15px auto; /* El "auto" a los lados centra la caja en la pantalla */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.perfil-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2b580c;
+    margin: 15px auto;
+    display: block; /* Necesario para que la imagen centrada con margin auto funcione */
+}
+
+/* Estilos de navegación y listas */
+nav a {
+    color: #2b580c;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
